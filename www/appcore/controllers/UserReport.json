@@ -1,0 +1,5 @@
+{ "user":[{"SubMarchantId":"1","SubMarchant":"Chicken Republic","Accurals":2000000,"Redemption":100000},
+{"SubMarchantId":"2","SubMarchant":"Butterfield Bakeries","Accurals":1000000,"Redemption":50000},
+{"SubMarchantId":"3","SubMarchant":"Pizza Republic","Accurals":50000,"Redemption":2500},
+{"SubMarchantId":"4","SubMarchant":"Reeds","Accurals":5000000,"Redemption":250000}]
+}

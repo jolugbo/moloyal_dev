@@ -1,0 +1,262 @@
+/* Empty. Add your own CSS if you like */
+.splash{
+    background: url(../img/bgImg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+ 
+}
+.scroll{
+  
+}
+html { 
+ /* background: url(../img/bgImg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+  /*background: url(../img/bgImg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size: 100%;*/
+}
+
+.branding {
+  width: 70%;
+  max-width: 300px;
+  margin: 0 5px 30px 0;
+  margin-top: 40px;
+  text-align: right;
+  float: right;
+}
+
+.toplogin{
+
+	margin-top: 10px !important;
+	padding-bottom: 10px !important;
+}
+
+.bar-header {
+   height: 70px !important; /*just an example*/
+}
+
+.logo {
+  width: 160px;
+  height: 80px;
+  margin-top:0px;
+  margin-bottom: 30px;
+  margin-left: 55px;
+  color:#333;
+  font-size: 20px;
+  text-align: center;
+  line-height: 20px;
+
+}
+
+
+img.logo{
+	text-align: center;
+
+}
+
+h2.taskTitle{
+	text-align: center;
+	color: blue;
+
+}
+
+.logoapp{
+	padding-left: 50px !important;
+}
+
+.divider{
+	padding: 3px;
+}
+
+.bar-positive, .tabs-positive>.tabs {
+  background-color: #000000 !important;
+  border-color:  #ff00ff;
+  }/* Empty. Add your own CSS if you like */
+
+
+  .item-complex, a.item.item-complex, .item.item-complex{
+    margin-bottom: 5px;
+    border: none;
+    border-bottom: 1px solid #eee;
+    padding:0;    
+    
+  }
+
+  a.item-content{
+    padding: 16px !important;
+  }
+
+  .bodybg{
+    background: #e4dfd9;
+  }
+  .jobtitle{
+    margin-top: -6px;
+    padding-bottom: 3px;
+  }
+
+  .jobtitle h2{
+    color:#00cccc;
+    font-size: 18px;
+  }
+
+  .date-post{
+    color: #aaa;
+    font-size: 14px;
+  }
+
+  .separator-fields {
+    height: 1px;
+    background:#5264AE;
+  }
+
+  p.jdesc{
+    padding-bottom: 5px;
+  }
+
+  span.jobtitle{
+    font-size: 26px;
+    font-weight: 500;
+    font-family: "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+    line-height: 1.2;
+    padding-right: 10px;
+  }
+
+  span.itmtitle{
+   font-size: 19px;
+   
+   font-weight: 500;
+   font-family: "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+   line-height: 1.2;
+ }
+
+ span.itmdesc{
+  font-size: 15px;
+  color:#000;
+  font-family: "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+  line-height: 1.2;
+}
+
+.apply-btn{
+  font-size: 16px !important;
+  color: #fff;
+}
+
+.panelbottom{
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  
+}
+
+.loginbtns{
+  background: #e4dfd9 !important;
+}
+
+.popup-head {
+
+  background:#333 !important;
+  text-align: center;
+
+  
+}
+
+.sidemenubg{
+background:#6495ed !important;
+  text-align: left;
+}
+
+.popup-title{
+  color:#fff !important;
+}
+.app-icon {
+    background-color: #fff;
+    background: url('../img/crown.jpg') center;
+    background-size: cover;
+    border-radius: 50%;
+    height: 125px;
+    margin: 0 auto;
+    width: 125px;
+}
+
+.social-login {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.transp{
+  background:rgba(0,0,0,0.5);
+    color: white;
+}
+.bgset{
+ background: url(../img/bgImg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Menu
+==================================*/
+.menu .bar.bar-header.expanded {
+    transition: all .5s ease-in-out;
+}
+
+.menu-open .bar.bar-header.expanded {
+    background-color: #222;
+}
+
+.menu h2 {
+    bottom: 0;
+    font-size: 18px;
+    left: 16px;
+    position: absolute;
+}
+
+.menu .avatar {
+    height: 88px;
+    width: 88px;
+}
+
+.menu.menu-left * {
+    font-weight: bold;
+}
+
+.menu-open .ion-navicon {
+    transform: rotate(-360deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-open .ion-navicon:before {
+    content: "\f2ca";
+}
+.scroll-bar-indicator
+{
+  display: none;
+}
+.bacImg{
+/* width: 400px;
+ height:150px;*/
+ padding-left:100px;
+}
+.loginarea{
+    /*background: red;*/
+    margin:50px;
+    text-align: center;
+    display:block;
+    float: left;
+}
+
+.logincontent {
+    display:table-cell;
+    vertical-align:middle;
+    height: 100px;
+    width: 100px;
+}
