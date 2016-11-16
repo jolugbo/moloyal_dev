@@ -1,0 +1,38 @@
+<style>
+
+.imgdiv {
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+  /*  margin-bottom: -5px;
+    margin-right: -5px;*/
+}
+</style>
+<ion-view cache-view="false" view-title="Voucher Details">
+
+<ion-content class="padding bgset">
+
+<div>
+        <h2 class="title" style="color:white">{{Holder}}  <br>Silver Level<!--  {{voucher.tierlevel}}  --></h2>
+        <h3>Benefits</h3>
+     <div class="list card " style="border-color: green">
+
+      <div class="item item-avatar">
+     
+      <h3>Discount Offer: {{voucher.percentageDiscount}}%</h3>
+      <div ng-controller='VoucherDataController'>
+      <div ng-repeat="Data in voucherData">
+      <h3>Activation Date: {{Data.activationDate}} </h3>
+      <h3>No of Usage: {{Data.NoOfTimesUsed}} </h3>
+      <h3>Status: {{Data.status == 'A'? 'Active':'Expired'}} </h3>
+      </div>
+      </div>
+     </div>
+
+</div>
+
+
+ 
+   
+</div>
+</ion-content>
+</ion-view>

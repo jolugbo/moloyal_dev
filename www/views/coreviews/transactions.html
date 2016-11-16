@@ -1,0 +1,96 @@
+<style>
+.imgdiv {
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+   /* margin-bottom: -5px;
+    margin-right: -5px;*/
+}
+.col-50, .col-33 {
+  display: flex;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.item-avatar, .item.tabs {
+  flex: 0 0 auto;
+}
+.item-body {
+  flex: 1 1 auto;
+}
+
+.button-small{
+ /* width: 100px !important;*/
+ /* margin-left: -20px !important;*/
+  text-align: left !important;
+  /*margin-right: -20px !important;*/
+}
+  
+  .buttonClass{
+     width:100%;
+     border-radius: 10px;
+     opacity: 0.8;
+}
+</style>
+<script>
+    document.onclick = function (e) {
+        e = e ||  window.event;
+        var element = e.target || e.srcElement;
+ 
+        if (element.tagName == 'A') {
+            window.open(element.href, "_blank", "location=yes");
+            return false;
+        }
+    };
+</script>
+<ion-view cache-view="false" view-title="Store Transactions">
+
+<ion-content class="padding bgset">
+
+<div  ng-controller='WalletController' >
+     
+
+
+<div class="card" style="background:rgba(0,0,0,0.5); color: white;" ng-repeat="reportData in wallets">
+   <div class="item item-avatar">
+      <img ng-src="img/BME.jpg" >
+      <!-- <img ng-src="{{url + reportData.submerchantimage}}" err-src="img/store.gif"> -->
+      <h2 style="color: white;"> {{reportData.submerchantName}} </h2>
+   </div>
+
+   <div class="item item-body" style="color: white;">
+      <!-- <img class="full-image" ng-src="{{url + reportData.submerchantimage}}" err-src="img/store.gif"> -->
+      <img class="full-image" ng-src="img/BME.jpg" >
+       Total Points :  {{reportData.accruedpoints}}<br/>
+      Total Reward: &#8358;{{reportData.redeemableamt | currency : ""}}<br/>
+      <div ng-controller='VoucherSetupController'> Tier Level :   {{userLevel}}</div> 
+  
+   <div class="row">
+     <div class="col col-50">
+     <a href="#/app/transactionsBreakDown/{{reportData.submerchantId}}/A/{{reportData.submerchantName}}" class="button button-full buttonClass icon-right text-left ion-chevron-right  bar-assertive-900 ink" style="font-size:12px;" >Points</a>
+     </div>
+    <div class="col col-50">  
+    <a href="#/app/transactionsBreakDown/{{reportData.submerchantId}}/R/{{reportData.submerchantName}}" class="button button-full buttonClass icon-right ion-chevron-right  bar-assertive-900 ink" style="font-size:12px  text-align: left !important;">Reward</a>
+    </div>
+
+</div>
+
+ <div class="row">
+ 
+ <div class="col"> <a href="#/app/transactionsBreakDown/{{reportData.submerchantId}}/V/{{reportData.submerchantName}}" class="button button-full buttonClass icon-right ion-chevron-right  bar-assertive-900 ink " >Vouchers</a></div>
+ 
+</div>
+<div class="row">
+<div class="col">  <a  href="#/app/buy" class="button icon-right ion-chevron-right button-full bar-assertive-900 ink buttonClass" >Buy</a>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+</ion-content>
+</ion-view>
+

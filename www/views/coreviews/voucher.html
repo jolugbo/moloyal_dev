@@ -1,0 +1,62 @@
+<style>
+
+.imgdiv {
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+  /*  margin-bottom: -5px;
+    margin-right: -5px;*/
+}
+h2,h3,h4{
+  color: white;
+}
+</style>
+<ion-view cache-view="false" view-title="Benefits">
+
+<ion-content class="padding bgset">
+   
+    <div class="list">
+
+    <a class="item item-thumbnail-left " href="#" style="margin-bottom: -5px;background:rgba(0,0,0,0.5); color: white;" ng-repeat="voucher in vouchers">
+    <img src="img/Transactions.png" style="margin-top: -10px">
+    <!--<img ng-src="{{url + voucher.submerchantimage}}" err-src="img/sampleLogo.jpg">-->
+          <div ng-switch on = "voucher.vouchertype">
+ <div ng-switch-when='1'>
+ <h2>{{voucher.submerchantName}}</h2>
+ <h3>Unlimited Voucher </h3>
+ <h4>You have <strong>{{voucher.percentageDiscount}} %</strong> Unlimited Discount</h4>
+ </div>
+ <div ng-switch-when='2'>
+ <!-- <h2>{{voucher.submerchantId}}</h2>
+ <h3>Unlimited Voucher </h3>
+ <h4>You have <strong>{{voucher.percentageDiscount}} %</strong> Unlimited Discount</h4>
+ <h4> Expires {{voucher.percentageDiscount}} </h4>
+ <br/><br/> -->
+  <h2>{{voucher.submerchantName}}</h2>
+   <h3>Single Use Voucher</h3>
+   <h4>You have <strong>{{voucher.percentageDiscount}}%</strong>
+   {{voucher.maxTimesUsage}} single use vouchers
+   </h4>
+ </div>
+ <div ng-switch-when='3'>
+    <h2>{{voucher.submerchantName}}</h2>
+   <h3>Limited Use Voucher</h3>
+   <h4>You have <strong>{{voucher.percentageDiscount}}%</strong>discount</h4>
+  <h4>Time usage: {{voucher.maxTimesUsage}} </h4>
+ </div>
+ <div ng-switch-when='4'>
+   <h2>{{voucher.submerchantName}}</h2>
+   <h3>Limited Time Voucher</h3>
+   <h4>You have <strong>{{voucher.percentageDiscount}}%</strong> discount</h4>
+   <h4>Voucher valid from <br/><strong>{{voucher.useFromDate}}%</strong> to <strong>{{voucher.useToDate}}%</strong></h4>
+ </div>
+ <div ng-switch-default >
+   <h2> No Voucher for this level yet</h2>
+ </div>
+</div>
+    </a>
+
+   <h2 ng-show="userLevel == 1000"> No Voucher for this level yet</h2>
+</div>
+
+</ion-content>
+</ion-view>

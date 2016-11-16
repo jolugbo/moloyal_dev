@@ -1,0 +1,70 @@
+<ion-side-menus enable-menu-with-back-views="true">
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-assertive-900" ng-class="{expanded: isExpanded, 'has-header-fab-left': hasHeaderFabLeft, 'has-header-fab-right': hasHeaderFabRight}" align-title="left">
+            <ion-nav-back-button class="no-text">
+            </ion-nav-back-button>
+
+            <ion-nav-buttons side="right">
+                <button class="button  button-icon button-clear ion-android-more-vertical" menu-toggle="right">
+                </button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+       <ion-nav-view name="fabContent"></ion-nav-view>
+        <ion-nav-view name="menuContent" ng-class="{expanded: isExpanded}" ></ion-nav-view>
+    </ion-side-menu-content>
+
+    <ion-side-menu side="right">
+
+        <ion-header-bar class="dark-bg expanded">
+
+              <span class="avatar" style="background: url('img/icmg.png'); background-size: cover;"></span>
+            <h2>MoLoyal</h2>
+
+
+        </ion-header-bar>
+        <ion-content class="stable-bg has-expanded-header ">
+            <ion-list class="bar-assertive-900">
+ <ion-item nav-clear menu-close href="#/app/listing">
+ <i class="icon ion-ios-list dark"></i>
+Home
+
+</ion-item>
+<ion-item  nav-clear menu-close href="#/app/profile">
+<i class="icon ion-ios-person dark"></i>
+Profile
+
+</ion-item>
+
+<ion-item nav-clear menu-close href="#/app/transactions">
+<i class="icon ion-briefcase dark"></i>
+Stores Transactions
+
+</ion-item>
+
+<ion-item nav-clear menu-close href="#/app/voucher">
+<i class="icon ion-briefcase dark"></i>
+Vouchers
+
+</ion-item>
+    <ion-item  nav-clear menu-close href="#/app/qr">
+        <i class="icon ion-ios-person dark"></i>
+       My Code
+
+    </ion-item>
+    <ion-item nav-clear  menu-close href="#/app/help">
+        <i class="icon ion-ios-person dark"></i>
+        Support
+
+    </ion-item>
+     <ion-item nav-clear  menu-close href="#/app/FAQ">
+        <i class="icon ion-help dark"></i>
+        FAQ
+    </ion-item>
+<ion-item   menu-close ng-click="logOut()">
+<i class="icon ion-log-out assertive-900"></i>
+Logout
+</ion-item>
+</ion-list>
+</ion-content>
+</ion-side-menu>
+</ion-side-menus>

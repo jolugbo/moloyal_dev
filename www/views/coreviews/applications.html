@@ -1,0 +1,22 @@
+<ion-view cache-view="false" view-title="My Jobs">
+<ion-content class="padding">
+<ion-list>
+<ion-item ng-repeat="job in jobs" ng-click="showJobDetails({{job}})">
+<div class="jobtitle">
+	<h2>
+		{{job.job_title}}
+	</h2>
+</div>
+
+<p class="jdesc">{{job.job_description | limitTo:100}}</p>
+
+<span class="date-post">
+	{{job.date_posted}}
+</span>
+<span class="item-note">
+	{{job.skill_required}}
+</span>
+</ion-item>
+</ion-list>
+</ion-content>
+</ion-view>

@@ -1,0 +1,65 @@
+<ion-view view-title="Dashboard">
+
+<ion-content class="padding">
+<div class="list card">
+    <div class="item item-divider positive">Welcome </div>
+    <div class="item item-body">
+        <div>
+            AvanteSoft ILoyal User application allows you to view your transactions real time.
+        </div>
+    </div>
+</div>
+
+<div  class="list card" ng-controller='LinegraphCtrl'>
+    <div class="item item-divider">
+        Transactions
+    </div>
+    <div class="item item-text-wrap">
+        <canvas id="line" class="chart chart-line" chart-data="data" chart-labels="labels" chart-legend="true" chart-series="series"
+        chart-colours="colours" chart-options="{showTooltips: true}"></canvas>
+    </div>
+</div>
+<div class="list card" ng-controller='DoughnutCtrl'>
+    <div class="item item-divider">
+       Transactions
+   </div>
+   <div class="item item-text-wrap">
+    <canvas id="doughnut" chart-colours="colours" class="chart chart-doughnut" chart-data="data" chart-labels="labels" chart-legend="true" chart-series="series" chart-options="{showTooltips: true}"></canvas>
+</div>
+</div>
+
+
+<div class="list card">
+    <a href="#/app/profile" class="cardss">
+        <div class="item item-body">
+            <div align="center">
+                <img src="img/users.png " >
+            </div>
+        </div>
+    </a>
+    <div class="item item-divider">My Profile</div>
+</div>
+<div class="list card"  ng-controller='WalletController'>
+    <a href="" class="">
+        <div class="item item-body">
+            <div align="center">
+               {{balances.wBalance}}
+           </div>
+       </div>
+   </a>
+   <div class="item item-divider">My Credit</div>
+</div>
+
+<div class="list card" ng-controller='QrController'>
+
+    <div class="item item-body">
+        <div align="center">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data={{ser}}" >
+        </div>
+    </div>
+    <div class="item item-divider">My QR Code</div>
+</div>
+
+
+</ion-content>
+</ion-view>

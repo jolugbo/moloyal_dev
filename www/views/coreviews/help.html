@@ -1,0 +1,33 @@
+<ion-view cache-view="false" view-title="Mobile Complaint ">
+<ion-content class="padding bgset">
+<div class="list card">
+  <div class="item item-divider positive">Help Ticket</div>
+  <div class="item item-body">
+
+   <div class="list">
+     <label class="item item-input item-stacked-label">
+       <span class="input-label positive">Title</span>
+       <input type="text" ng-model="Message.title" ng-bind='{{Message.title}}'>
+     </label>
+     <ion-item>
+     <label class="stacked">
+      <span class="input-label positive">Message</span>
+    </label>
+      <textArea ng-model="Message.comment"></textArea>
+    </ion-item>
+   
+
+
+ </div>
+ <button style="margin:0;padding:0" ng-click="SubmitTicket()" class="button button-full button-balanced">
+  Enter
+</button>
+</div>
+
+</div>
+
+<div class="item item-divider positive">
+<a href="#">List Of Frequently asked Question</a></div>
+  <div class="item item-body">
+</ion-content>
+</ion-view>

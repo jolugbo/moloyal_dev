@@ -1,0 +1,95 @@
+<ion-view view-title="{{singlejob.job.job_title}}" >
+<ion-nav-buttons side="right">
+<button class="button button-icon button-dark ion-checkmark-circled" ng-click="apply({{singlejob.job.id}})">
+</button>
+</ion-nav-buttons>
+<ion-content class="bodybg">
+
+<div style="margin-top:10px" class="list card">
+
+	<div class="item">
+		
+		<p>
+			<span class="jobtitle positive">
+				{{singlejob.job.job_title}}
+			</span>
+			
+		</p><p>
+		<span style="margin-right:20px" class="datep">
+			<b>Posted:</b> {{singlejob.job.date_posted}}    
+		</span>
+		<span class="datep">
+			<b>	Expired:</b> {{singlejob.job.expiry_date}}   
+		</span>
+	</p>
+
+
+</div>
+<div class="item">
+	<p>
+		<span class="itmtitle positive">
+			Organisation:
+		</span>
+		<span class="itmdesc">{{singlejob.job.company_name}}</span>
+	</p>
+</div>
+
+<div class="item">
+	<p>
+		<span class="itmtitle positive">
+			Sector:
+		</span>
+		<span class="itmdesc">{{singlejob.job.name}}</span>
+	</p>
+
+	<p>
+		<span class="itmtitle positive">
+			Skills Required:
+		</span>
+		<span class="itmdesc">{{singlejob.job.skill_required}}</span>
+	</p>
+</div>
+
+<div class="item">
+	<p>
+		<span class="itmtitle positive">
+			Experience:
+		</span>
+		<span class="itmdesc ">{{singlejob.job.experience}}</span>
+	</p>
+
+	<p>
+		<span class="itmtitle positive">
+			Location:
+		</span>
+		<span class="itmdesc">{{singlejob.job.location}}</span>
+	</p>
+</div>
+
+
+<div class="item item-body">
+	<p>
+		<span class="itmtitle positive">
+			Job Description:
+		</span>
+	</p>
+	<p>
+		{{singlejob.job.job_description}}
+	</p>
+	
+</div>
+
+<div class="item tabs tabs-balanced tabs-secondary tabs-icon-left">
+	
+	<a class="tab-item apply-btn" ng-click="apply({{singlejob.job.id}})"  href="#">
+		<i class="icon ion-ios-paperplane"></i>
+		Apply
+		
+	</a>
+</div>
+
+</div>
+
+
+</ion-content>
+</ion-view>

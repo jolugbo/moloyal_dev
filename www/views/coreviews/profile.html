@@ -1,0 +1,67 @@
+<ion-view cache-view="false" view-title="Edit Profile - {{user.firstname}} {{user.lastname}}">
+
+<ion-content class="padding bgset">
+<style>
+  .buttonClass{
+    
+     border-radius: 10px;
+     opacity: 0.8;
+}
+</style>
+<div class="list card">
+  <div class="item item-divider positive">Basic Information</div>
+  <div class="item item-body">
+
+   <div class="list">
+     <label class="item item-input item-stacked-label">
+       <span class="input-label positive">User Id</span>
+       <input type="text" ng-disabled="true" ng-model="user.userId" ng-bind='{{user.userId}}'>
+     </label>
+     <label class="item item-input item-stacked-label">
+      <span class="input-label positive">First Name</span>
+      <input type="text" ng-model="user.firstname" ng-bind='{{user.firstname}}'>
+    </label>
+    <label class="item item-input item-stacked-label">
+      <span class="input-label positive">Last Name</span>
+      <input type="text" ng-model="user.lastname" ng-bind='{{user.lastname}}'>
+    </label>
+    <label class="item item-input item-stacked-label">
+     <span class="input-label positive">Email</span>
+     <input type="text" ng-disabled="true" ng-model="user.email" ng-bind='{{user.email}}'>
+   </label>
+   <label class="item item-input item-stacked-label">
+     <span class="input-label positive">Address</span>
+     <input type="text" ng-model="user.street1" ng-bind='{{user.street1}}'>
+   </label>
+
+   <!--<label class="item item-input item-stacked-label">-->
+   <!--<span class="input-label positive">State</span>-->
+   <!--<select ng-model="user.city"  ng-bind='{{user.phone}}'>-->
+
+   <!--<option >jjfjk</option>-->
+   <!--< option >jjfjk</option>-->
+   <!--<option >jjfjk</option>-->
+   <!--</select>-->
+
+   <!--</label>-->
+
+ </div>
+ <div class="row">
+ <button  ng-click="updateProfile()" class="button button-full button-assertive ink buttonClass">
+  Update Profile
+</button>
+</div>
+</div>
+
+</div>
+
+<!-- <div class="list card">
+  <div class="item item-divider">CV</div>
+  <div class="item item-body">
+    <div>
+      <a class="button" ng-click="showFileBrowser()" href="#">Choose File</a>
+    </div>
+  </div>
+</div> -->
+</ion-content>
+</ion-view>

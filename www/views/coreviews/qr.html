@@ -1,0 +1,39 @@
+<ion-view view-title="QR Code">
+
+<ion-content class="padding bgset">
+
+<div  ng-controller='QrController'>
+<div class="list card" style="background:rgba(0,0,0,0.5);color: white;">
+
+    <div class="item item-body">
+        <div align="center">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data={{ser}}" >
+        </div>
+    </div>
+    <div class="item item-divider"style="color: white;">My QR Code</div>
+</div>
+
+<div class="list card" style="background:rgba(0,0,0,0.5);color: white;">
+
+    <div class="item item-body">
+        <div align="center">
+            <img  ng-src="
+https://www.barcodesinc.com/generator/image.php?code={{ser}}&style=197&type=C128B&width=250&height=200&xres=1&font=3" >
+        </div>
+    </div>
+    <div class="item item-divider" style="color: white;">My Bar-Code</div>
+
+<!-- 
+  <script language="javascript" type="text/javascript">
+    var d = new Date(); 
+    document.getElementById("imgbar").src = 
+      "http://www.kitco.com/images/live/gold.gif?ver=" + 
+       d.getTime();
+</script> -->
+</div>
+ </div>
+        
+
+
+    </ion-content>
+</ion-view>
